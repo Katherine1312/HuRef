@@ -295,7 +295,7 @@ def generate_model_images(feature_vector, png_path, seed):
     img_n[0].save(png_path+'.png')
 def parse_args():
     parser = argparse.ArgumentParser(description='Encoder Training Script')
-    parser.add_argument('--model_path', type=str, default="decapoda-research/llama-7b-hf", help='model path or model name to generate fingerprint')
+    parser.add_argument('--model_path', type=str, default="openlm-research/open_llama_7b", help='model path or model name to generate fingerprint')
     parser.add_argument('--huggingface_cache_dir', type=str, default="/data1/byzeng/huggingface/hub", help='your huggingface cache dir')
     parser.add_argument('--sorted_tokens_path', type=str, default="/home/byzeng/project/ICLRcode/toptokenstest/", help='the filefold path of sorted tokens')
     parser.add_argument('--invariant_terms_saved_path', type=str, default="/home/byzeng/NIPS_Code/invariant_terms/", help='the filefold path to save invariant terms')
